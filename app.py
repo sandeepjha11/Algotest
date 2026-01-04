@@ -37,9 +37,3 @@ exec(code_obj, core_module.__dict__)
 
 # Add the new module to sys.modules so it can be imported elsewhere if needed
 sys.modules["_core"] = core_module
-
-# Now, we can call the main function from our dynamically loaded module
-if hasattr(core_module, "main") and callable(core_module.main):
-    core_module.main()
-else:
-    print("The '_core' module does not have a 'main' function.")

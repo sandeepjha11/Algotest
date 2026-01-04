@@ -1,2 +1,1 @@
-def main():
-    print("Hello, from the decrypted module!")
+print("Hello, from the decrypted module!")
